@@ -1,4 +1,15 @@
-<?php require_once 'includes/header.php'; ?>
+<?php
+
+require_once 'config/database.php';
+require_once 'includes/header.php';
+
+$sql = "SELECT * FROM produtos WHERE ativo = 1 ORDER BY id DESC LIMIT 4";
+$stmt = $pdo->prepare($sql);
+$stmt->execute();
+
+$produtos = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+?>
 
 <main>
 
@@ -79,6 +90,59 @@
                     <p>Complete sua experiência</p>
                 </div>
             </a>
+
+        </div>
+
+    </section>
+
+    <section class="featured-products container">
+
+        <div class="section-heading">
+            <span>SELEÇÃO ESPECIAL</span>
+            <h2>Produtos em destaque</h2>
+            <p>Confira alguns dos produtos disponíveis em nossa loja.</p>
+        </div>
+
+        <div class="products-grid">
+
+            <?php if (count($produtos) > 0): ?>
+
+                <?php foreach ($produtos as $produto): ?>
+
+                    <div class="product-card">
+
+                        <div class="product-image">
+                            <img
+                                src="<?php echo htmlspecialchars($produto['imagem']); ?>"
+                                alt="<?php echo htmlspecialchars($produto['nome']); ?>"
+                            >
+                        </div>
+
+                        <div class="product-info">
+
+                            <h3>
+                                <?php echo htmlspecialchars($produto['nome']); ?>
+                            </h3>
+
+                            <p>
+                                <?php echo htmlspecialchars($produto['descricao']); ?>
+                            </p>
+
+                            <strong>
+                                R$ <?php echo number_format($produto['preco'], 2, ',', '.'); ?>
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                <?php endforeach; ?>
+
+            <?php else: ?>
+
+                <p>Nenhum produto disponível no momento.</p>
+
+            <?php endif; ?>
 
         </div>
 
