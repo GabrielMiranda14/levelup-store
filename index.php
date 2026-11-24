@@ -25,47 +25,62 @@
         </div>
 
         <div class="hero-image">
-            <img src="assets/images/products/hero-gamer.jpg" alt="Setup gamer com iluminação RGB">
+            <img src="assets/images/hero-gamer.jpg" alt="Setup gamer com iluminação RGB">
         </div>
 
     </section>
 
     <section class="categories container">
 
-    <div class="section-heading">
-        <span>EXPLORE A LOJA</span>
-        <h2>Encontre sua categoria</h2>
-        <p>Descubra os produtos ideais para sua experiência gamer.</p>
-    </div>
+        <div class="section-heading">
+            <span>EXPLORE A LOJA</span>
+            <h2>Encontre sua categoria</h2>
+            <p>Descubra os produtos ideais para sua experiência gamer.</p>
+        </div>
 
-    <div class="categories-grid">
+        <div class="categories-grid">
 
-        <a href="produtos.php?categoria=1" class="category-card">
-            <h3>Consoles</h3>
-            <p>Explore os consoles</p>
-        </a>
+            <a href="produtos.php?categoria=1" class="category-card">
+                <img src="assets/images/categories/consoles.jpg" alt="Consoles">
+                <div class="category-card-content">
+                    <h3>Consoles</h3>
+                    <p>Explore os consoles</p>
+                </div>
+            </a>
 
-        <a href="produtos.php?categoria=2" class="category-card">
-            <h3>Periféricos</h3>
-            <p>Melhore seu setup</p>
-        </a>
+            <a href="produtos.php?categoria=2" class="category-card">
+                <img src="assets/images/categories/perifericos.jpg" alt="Periféricos gamer">
+                <div class="category-card-content">
+                    <h3>Periféricos</h3>
+                    <p>Melhore seu setup</p>
+                </div>
+            </a>
 
-        <a href="produtos.php?categoria=3" class="category-card">
-            <h3>Hardware</h3>
-            <p>Potencialize seu PC</p>
-        </a>
+            <a href="produtos.php?categoria=3" class="category-card">
+                <img src="assets/images/categories/hardwares.jpg" alt="Componentes de hardware">
+                <div class="category-card-content">
+                    <h3>Hardware</h3>
+                    <p>Potencialize seu PC</p>
+                </div>
+            </a>
 
-        <a href="produtos.php?categoria=4" class="category-card">
-            <h3>Jogos</h3>
-            <p>Novas aventuras esperam</p>
-        </a>
+            <a href="produtos.php?categoria=4" class="category-card">
+                <img src="assets/images/categories/jogos.jpg" alt="Jogos">
+                <div class="category-card-content">
+                    <h3>Jogos</h3>
+                    <p>Novas aventuras esperam</p>
+                </div>
+            </a>
 
-        <a href="produtos.php?categoria=5" class="category-card">
-            <h3>Acessórios</h3>
-            <p>Complete sua experiência</p>
-        </a>
+            <a href="produtos.php?categoria=5" class="category-card">
+                <img src="assets/images/categories/acessorios.jpg" alt="Acessórios gamer">
+                <div class="category-card-content">
+                    <h3>Acessórios</h3>
+                    <p>Complete sua experiência</p>
+                </div>
+            </a>
 
-    </div>
+        </div>
 
     </section>
 
