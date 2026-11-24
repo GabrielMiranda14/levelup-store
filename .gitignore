@@ -1,0 +1,22 @@
+
+# Environment variables
+.env
+
+# Dependencies
+/vendor/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Operating system
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
