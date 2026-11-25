@@ -60,6 +60,12 @@ if (session_status() === PHP_SESSION_NONE) {
 
                     <?php if (isset($_SESSION['usuario_id'])): ?>
 
+                        <?php if ($_SESSION['usuario_tipo'] === 'admin'): ?>
+                            <a class="nav-link" href="/levelup-store/admin/">
+                                Painel administrativo
+                            </a>
+                        <?php endif; ?>
+
                         <span class="nav-link">
                             Olá, <?php echo htmlspecialchars($_SESSION['usuario_nome']); ?>
                         </span>
