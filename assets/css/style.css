@@ -684,3 +684,131 @@ footer p:first-child {
 .view-product-button:active {
     transform: scale(0.97);
 }
+
+
+/* =========================
+   LOGIN E CADASTRO
+========================= */
+
+.auth-page {
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 480px;
+    padding: 40px;
+    background: var(--cor-card);
+    border: 1px solid rgba(37, 99, 235, 0.25);
+    border-radius: 18px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.25);
+}
+
+.auth-card .section-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.auth-card .section-heading h1 {
+    color: var(--cor-texto);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.auth-card .section-heading p {
+    color: var(--cor-texto-secundario);
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    color: var(--cor-texto);
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 13px 15px;
+    color: var(--cor-texto);
+    background: var(--cor-secundaria);
+    border: 1px solid #334155;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: var(--cor-azul);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.auth-button {
+    width: 100%;
+    padding: 14px;
+    color: #fff;
+    background: var(--cor-azul);
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.auth-button:hover {
+    background: var(--cor-roxo);
+}
+
+.auth-button:active {
+    transform: scale(0.97);
+}
+
+.auth-alternative {
+    margin-top: 25px;
+    color: var(--cor-texto-secundario);
+    text-align: center;
+}
+
+.auth-alternative a {
+    color: var(--cor-azul);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.auth-alternative a:hover {
+    color: var(--cor-roxo);
+}
+
+.form-error,
+.form-success {
+    padding: 12px 15px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-error {
+    color: #fecaca;
+    background: rgba(220, 38, 38, 0.15);
+    border: 1px solid rgba(220, 38, 38, 0.4);
+}
+
+.form-success {
+    color: #bbf7d0;
+    background: rgba(22, 163, 74, 0.15);
+    border: 1px solid rgba(22, 163, 74, 0.4);
+}
