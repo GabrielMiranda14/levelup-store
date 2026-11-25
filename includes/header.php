@@ -52,13 +52,34 @@ if (session_status() === PHP_SESSION_NONE) {
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Categorias</a>
+                        <a class="nav-link" href="/levelup-store/produtos.php#categorias">Categorias</a>
                     </li>
                 </ul>
 
-                <div class="d-flex gap-3">
-                    <a class="nav-link" href="#">Minha conta</a>
-                    <a class="nav-link" href="/levelup-store/carrinho.php">Carrinho</a>
+                <div class="d-flex gap-3 align-items-center">
+
+                    <?php if (isset($_SESSION['usuario_id'])): ?>
+
+                        <span class="nav-link">
+                            Olá, <?php echo htmlspecialchars($_SESSION['usuario_nome']); ?>
+                        </span>
+
+                        <a class="nav-link" href="/levelup-store/logout.php">
+                            Sair
+                        </a>
+
+                    <?php else: ?>
+
+                        <a class="nav-link" href="/levelup-store/login.php">
+                            Minha conta
+                        </a>
+
+                    <?php endif; ?>
+
+                    <a class="nav-link" href="/levelup-store/carrinho.php">
+                        Carrinho
+                    </a>
+
                 </div>
 
             </div>
