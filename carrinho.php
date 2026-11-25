@@ -83,6 +83,12 @@ $total = 0;
                 </h2>
             </div>
 
+            <div class="cart-checkout">
+                <a href="checkout.php" class="checkout-button">
+                    Finalizar compra
+                </a>
+            </div>
+
         <?php else: ?>
 
             <p class="empty-cart">Seu carrinho está vazio.</p>
