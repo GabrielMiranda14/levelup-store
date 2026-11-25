@@ -58,7 +58,7 @@ if (session_status() === PHP_SESSION_NONE) {
 
                 <div class="d-flex gap-3">
                     <a class="nav-link" href="#">Minha conta</a>
-                    <a class="nav-link" href="#">Carrinho</a>
+                    <a class="nav-link" href="/levelup-store/carrinho.php">Carrinho</a>
                 </div>
 
             </div>

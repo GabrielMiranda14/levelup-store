@@ -113,6 +113,13 @@ $produtos = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                 R$ <?php echo number_format($produto['preco'], 2, ',', '.'); ?>
                             </strong>
 
+                            <a
+                                href="produto.php?id=<?php echo (int) $produto['id']; ?>"
+                                class="view-product-button"
+                            >
+                                Ver detalhes
+                            </a>
+
                         </div>
 
                     </div>

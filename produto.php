@@ -55,9 +55,19 @@ require_once 'includes/header.php';
                 <?php echo (int) $produto['estoque']; ?> unidades
             </p>
 
-            <button type="button" class="add-cart-button">
-                Adicionar ao carrinho
-            </button>
+            <form action="adicionar-carrinho.php" method="POST">
+
+                <input
+                    type="hidden"
+                    name="produto_id"
+                    value="<?php echo (int) $produto['id']; ?>"
+                >
+
+                <button type="submit" class="add-cart-button">
+                    Adicionar ao carrinho
+                </button>
+
+            </form>
 
         </div>
 
